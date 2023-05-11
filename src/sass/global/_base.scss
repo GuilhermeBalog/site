@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --black: #1F2024;
+
+  --grey-a: #2D2E32;
+  --grey-b: #25262A;
+  --grey-c: #3A3C41;
+
+  --white: #f5fafa;
+  --grey: #DDD;
+  --blue: #00BCD4;
+
+  --primary: var(--blue);
+  --text: var(--grey);
+  --accent-text: var(--white);
+
+  --monospace: 'Fira Code', monospace;
+  --sans-serif: 'Rubik', sans-serif;
+
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
