@@ -1,0 +1,16 @@
+{
+  "name": "site-vanilla",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node src/index.js"
+  },
+  "author": "Guilherme Balog",
+  "license": "MIT",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "sass": "^1.62.1"
+  }
+}
