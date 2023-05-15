@@ -1,0 +1,46 @@
+<li class="project-card" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+  <a href="${project.homepage}" title="${project.name}">
+    <img
+      src="${project.image}"
+      alt="${project.name}"
+      class="project-card__thumbnail"
+      loading="lazy"
+      itemprop="thumbnailUrl"
+    />
+  </a>
+  <div class="project-card__body">
+    <h4 class="project-card__title" itemprop="name">
+      <a href="${project.homepage}" >
+        ${project.emoji}
+        <span itemprop="name">
+          ${project.name}
+        </span>
+      </a>
+    </h4>
+    <p class="project-card__description" itemprop="description">
+      ${project.description}
+    </p>
+    <p class="project-card__tags" itemprop="keywords">
+      ${project.languages.join(', ')}
+    </p>
+    <meta itemprop="programmingLanguage" content="${project.languages[0]}">
+
+    <div class="project-card__actions">
+      ${project.homepage && project.homepage !== project.repo_url ? `
+        <a href="${project.homepage}" class="project-card__link" itemprop="url">
+          🔗 Acesse
+        </a>
+      `: ''}
+
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="${project.repo_url}"
+        class="project-card__link"
+        itemprop="codeRepository"
+      >
+        💻 Código fonte
+      </a>
+    </div>
+  </div>
+</li>

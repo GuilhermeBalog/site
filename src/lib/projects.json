@@ -1,0 +1,166 @@
+[
+  {
+    "emoji": "#️⃣",
+    "name": "tic-tac-toe",
+    "description": "May implementation of Tic Tac Toe, using Javascript",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.github.io/tic-tac-toe/",
+    "repo_url": "https://github.com/GuilhermeBalog/tic-tac-toe",
+    "image": "https://repository-images.githubusercontent.com/233632341/f93e9980-8261-11eb-90d7-ae408d2d3550"
+  },
+  {
+    "emoji": "💣",
+    "name": "minesweeper",
+    "description": "Web version of the classic Minesweeper",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.ga/minesweeper/",
+    "repo_url": "https://github.com/GuilhermeBalog/minesweeper",
+    "image": "https://repository-images.githubusercontent.com/234667787/d8168080-6293-11eb-827d-c3230638fc4f"
+  },
+  {
+    "emoji": "🤹🏾‍♂️",
+    "name": "genius",
+    "description": "Jogo baseado no brinquedo Genius, versão para web",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.ga/genius",
+    "repo_url": "https://github.com/GuilhermeBalog/genius",
+    "image": "https://repository-images.githubusercontent.com/250106085/42a5de00-d6c5-11eb-882f-6f0248dfb178"
+  },
+  {
+    "emoji": "🎹",
+    "name": "js-music-keyboard",
+    "description": "A simple keyboard made in with the Tone.js framework",
+    "languages": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "homepage": "https://guilhermebalog.ga/js-music-keyboard/",
+    "repo_url": "https://github.com/GuilhermeBalog/js-music-keyboard",
+    "image": "https://repository-images.githubusercontent.com/190751734/aab8e980-630a-11eb-829d-0b05aa46c34d"
+  },
+  {
+    "emoji": "☑️",
+    "name": "task-list",
+    "description": "A To-do list app, made with Javascript",
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.github.io/task-list/",
+    "repo_url": "https://github.com/GuilhermeBalog/task-list",
+    "image": "https://repository-images.githubusercontent.com/192801585/de3f8400-8504-11eb-8ed6-ad1cddf81ca9"
+  },
+  {
+    "emoji": "👨🏾‍💻",
+    "name": "my-hello-worlds",
+    "description": "This is a web page with some languages that I know",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.ga/my-hello-worlds",
+    "repo_url": "https://github.com/GuilhermeBalog/my-hello-worlds",
+    "image": "https://repository-images.githubusercontent.com/213938870/70c51000-9884-11eb-9c12-972eb0c3fb2a"
+  },
+  {
+    "emoji": "🎮",
+    "name": "imersao-gamedev",
+    "description": "Jogo desenvolvido com o p5.js durante a Imersão GameDev da Alura",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.ga/imersao-gamedev/",
+    "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
+    "image": "https://repository-images.githubusercontent.com/275852683/7f4bca80-8112-11eb-87d0-870d5f6db07e"
+  },
+  {
+    "emoji": "🦖",
+    "name": "capivara-chat",
+    "description": "Chat made with Node.js and websockets",
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "homepage": "https://capivarachat.herokuapp.com",
+    "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
+    "image": "https://repository-images.githubusercontent.com/233054025/90b4d380-6244-11eb-914d-659004caaa32"
+  },
+  {
+    "emoji": "🛰️",
+    "name": "dev-radar",
+    "description": "Find developers near you!",
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Shell"
+    ],
+    "homepage": "",
+    "repo_url": "https://github.com/GuilhermeBalog/dev-radar",
+    "image": "https://opengraph.githubassets.com/15b194bece37aee6eab6d8500dad45488d4b86604a523e205654573c2a33305c/GuilhermeBalog/dev-radar"
+  },
+  {
+    "emoji": "📜",
+    "name": "portfolio-generator",
+    "description": "Create a portfolio using your GitHub repositories!",
+    "languages": [
+      "JavaScript",
+      "CSS"
+    ],
+    "homepage": "https://guilhermebalog.github.io/portfolio-generator/",
+    "repo_url": "https://github.com/GuilhermeBalog/portfolio-generator",
+    "image": "https://repository-images.githubusercontent.com/233984862/ee186d00-5986-11eb-85ae-6ada63e1d928"
+  },
+  {
+    "emoji": "🍽️",
+    "name": "ru-scraping",
+    "description": "API que usa webscraping para prover o cardápio da USP Leste",
+    "languages": [
+      "JavaScript"
+    ],
+    "homepage": "https://ru-scraping.herokuapp.com/",
+    "repo_url": "https://github.com/GuilhermeBalog/ru-scraping",
+    "image": "https://repository-images.githubusercontent.com/248112298/5dc44700-64b3-11eb-84e5-62bbc61e8d85"
+  },
+  {
+    "emoji": "⛅",
+    "name": "mother-weather",
+    "description": "Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer",
+    "languages": [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "Shell"
+    ],
+    "homepage": "https://guilhermebalog.github.io/mother-weather/",
+    "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
+    "image": "https://repository-images.githubusercontent.com/287170883/9c6fe280-5986-11eb-8d64-87f278678d2e"
+  },
+  {
+    "emoji": "🦸🏾‍♂️",
+    "name": "be-the-hero",
+    "description": "Conectando ongs que precisam de ajuda com Heróis para salvá-las!",
+    "languages": [],
+    "homepage": "https://be-the-hero.surge.sh",
+    "repo_url": "https://github.com/GuilhermeBalog/be-the-hero",
+    "image": "https://repository-images.githubusercontent.com/250404540/34b6bd80-8519-11eb-81b2-426bb86fc46c"
+  }
+]

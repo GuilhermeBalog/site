@@ -10,6 +10,8 @@
   "author": "Guilherme Balog",
   "license": "MIT",
   "dependencies": {
+    "@octokit/graphql": "^5.0.5",
+    "dotenv": "^16.0.3",
     "html-minifier": "^4.0.0",
     "sass": "^1.62.1"
   }

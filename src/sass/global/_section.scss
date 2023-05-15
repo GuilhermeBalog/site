@@ -1,6 +1,6 @@
 section {
   color: var(--text);
-  padding: 1.5rem 1.25rem;
+  padding: 1.5rem max((100vw - 1080px) / 2, 1.25rem);
 
   &:nth-child(odd) {
     background-color: var(--grey-a);
@@ -17,6 +17,6 @@ section {
     color: var(--accent-text);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
