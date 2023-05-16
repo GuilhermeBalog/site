@@ -3,6 +3,9 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+export const PROJECTS_PATH = path.join(__dirname, 'projects.json')
+export const EDUCATION_PATH = path.join(__dirname, 'education.json')
+
 export const SRC_PATH = path.join(__dirname, '..');
 
 export const TEMPLATES_FOLDER = path.join(SRC_PATH, 'templates');
