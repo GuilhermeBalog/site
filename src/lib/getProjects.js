@@ -35,6 +35,7 @@ function convertRepoToProject(repo) {
     emoji,
     name: repo.name,
     description,
+    primaryLanguage: repo.primaryLanguage?.name,
     languages: repo.languages.nodes.map(node => node.name),
     homepage: repo.homepageUrl,
     repo_url: repo.url,

@@ -9,7 +9,7 @@
     />
   </a>
   <div class="project-card__body">
-    <h4 class="project-card__title" itemprop="name">
+    <h4 class="project-card__title">
       <a href="${project.homepage}" >
         ${project.emoji}
         <span itemprop="name">
@@ -23,7 +23,7 @@
     <p class="project-card__tags" itemprop="keywords">
       ${project.languages.join(', ')}
     </p>
-    <meta itemprop="programmingLanguage" content="${project.languages[0]}">
+    ${project.primaryLanguage ? `<meta itemprop="programmingLanguage" content="${project.primaryLanguage}">` : '' }
 
     <div class="project-card__actions">
       ${project.homepage && project.homepage !== project.repo_url ? `

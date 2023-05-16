@@ -3,6 +3,7 @@
     "emoji": "#️⃣",
     "name": "tic-tac-toe",
     "description": "May implementation of Tic Tac Toe, using Javascript",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
       "JavaScript",
@@ -16,12 +17,13 @@
     "emoji": "💣",
     "name": "minesweeper",
     "description": "Web version of the classic Minesweeper",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
       "JavaScript",
       "CSS"
     ],
-    "homepage": "https://guilhermebalog.ga/minesweeper/",
+    "homepage": "https://guilhermebalog.github.io/minesweeper/",
     "repo_url": "https://github.com/GuilhermeBalog/minesweeper",
     "image": "https://repository-images.githubusercontent.com/234667787/d8168080-6293-11eb-827d-c3230638fc4f"
   },
@@ -29,12 +31,13 @@
     "emoji": "🤹🏾‍♂️",
     "name": "genius",
     "description": "Jogo baseado no brinquedo Genius, versão para web",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
       "JavaScript",
       "CSS"
     ],
-    "homepage": "https://guilhermebalog.ga/genius",
+    "homepage": "https://guilhermebalog.github.io/genius/",
     "repo_url": "https://github.com/GuilhermeBalog/genius",
     "image": "https://repository-images.githubusercontent.com/250106085/42a5de00-d6c5-11eb-882f-6f0248dfb178"
   },
@@ -42,12 +45,13 @@
     "emoji": "🎹",
     "name": "js-music-keyboard",
     "description": "A simple keyboard made in with the Tone.js framework",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "homepage": "https://guilhermebalog.ga/js-music-keyboard/",
+    "homepage": "https://guilhermebalog.github.io/js-music-keyboard/",
     "repo_url": "https://github.com/GuilhermeBalog/js-music-keyboard",
     "image": "https://repository-images.githubusercontent.com/190751734/aab8e980-630a-11eb-829d-0b05aa46c34d"
   },
@@ -55,6 +59,7 @@
     "emoji": "☑️",
     "name": "task-list",
     "description": "A To-do list app, made with Javascript",
+    "primaryLanguage": "HTML",
     "languages": [
       "JavaScript",
       "HTML",
@@ -68,12 +73,13 @@
     "emoji": "👨🏾‍💻",
     "name": "my-hello-worlds",
     "description": "This is a web page with some languages that I know",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
       "JavaScript",
       "CSS"
     ],
-    "homepage": "https://guilhermebalog.ga/my-hello-worlds",
+    "homepage": "https://guilhermebalog.github.io/my-hello-worlds/",
     "repo_url": "https://github.com/GuilhermeBalog/my-hello-worlds",
     "image": "https://repository-images.githubusercontent.com/213938870/70c51000-9884-11eb-9c12-972eb0c3fb2a"
   },
@@ -81,12 +87,13 @@
     "emoji": "🎮",
     "name": "imersao-gamedev",
     "description": "Jogo desenvolvido com o p5.js durante a Imersão GameDev da Alura",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
       "JavaScript",
       "CSS"
     ],
-    "homepage": "https://guilhermebalog.ga/imersao-gamedev/",
+    "homepage": "https://guilhermebalog.github.io/imersao-gamedev/",
     "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
     "image": "https://repository-images.githubusercontent.com/275852683/7f4bca80-8112-11eb-87d0-870d5f6db07e"
   },
@@ -94,12 +101,13 @@
     "emoji": "🦖",
     "name": "capivara-chat",
     "description": "Chat made with Node.js and websockets",
+    "primaryLanguage": "HTML",
     "languages": [
       "JavaScript",
       "HTML",
       "CSS"
     ],
-    "homepage": "https://capivarachat.herokuapp.com",
+    "homepage": "",
     "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
     "image": "https://repository-images.githubusercontent.com/233054025/90b4d380-6244-11eb-914d-659004caaa32"
   },
@@ -107,6 +115,7 @@
     "emoji": "🛰️",
     "name": "dev-radar",
     "description": "Find developers near you!",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "JavaScript",
       "HTML",
@@ -121,6 +130,7 @@
     "emoji": "📜",
     "name": "portfolio-generator",
     "description": "Create a portfolio using your GitHub repositories!",
+    "primaryLanguage": "JavaScript",
     "languages": [
       "JavaScript",
       "CSS"
@@ -133,6 +143,7 @@
     "emoji": "⛅",
     "name": "mother-weather",
     "description": "Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer",
+    "primaryLanguage": "TypeScript",
     "languages": [
       "HTML",
       "CSS",

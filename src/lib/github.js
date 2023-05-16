@@ -17,6 +17,9 @@ export async function getRepo(repoFullName)  {
           openGraphImageUrl
           homepageUrl
           url
+          primaryLanguage {
+            name
+          }
           languages(first: 5) {
             nodes {
               name
