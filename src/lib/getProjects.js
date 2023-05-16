@@ -13,7 +13,7 @@ const reposIds = [
   'GuilhermeBalog/capivara-chat',
   'GuilhermeBalog/dev-radar',
   'GuilhermeBalog/portfolio-generator',
-  'GuilhermeBalog/ru-scraping',
+  // 'GuilhermeBalog/ru-scraping',
   'GuilhermeBalog/mother-weather',
   'GuilhermeBalog/be-the-hero',
 ]

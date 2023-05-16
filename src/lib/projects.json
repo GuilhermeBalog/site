@@ -130,17 +130,6 @@
     "image": "https://repository-images.githubusercontent.com/233984862/ee186d00-5986-11eb-85ae-6ada63e1d928"
   },
   {
-    "emoji": "🍽️",
-    "name": "ru-scraping",
-    "description": "API que usa webscraping para prover o cardápio da USP Leste",
-    "languages": [
-      "JavaScript"
-    ],
-    "homepage": "https://ru-scraping.herokuapp.com/",
-    "repo_url": "https://github.com/GuilhermeBalog/ru-scraping",
-    "image": "https://repository-images.githubusercontent.com/248112298/5dc44700-64b3-11eb-84e5-62bbc61e8d85"
-  },
-  {
     "emoji": "⛅",
     "name": "mother-weather",
     "description": "Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer",
