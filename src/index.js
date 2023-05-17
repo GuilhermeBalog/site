@@ -14,6 +14,7 @@ import { minifyHtml } from './lib/minifyHtml.js';
 import { buildJs } from './lib/buildJs.js';
 import { copyFiles } from './lib/copyFiles.js';
 import { getProjects } from './lib/getProjects.js';
+import { getEducation } from './lib/getEducation.js';
 import {
   TEMPLATES_FOLDER,
   DIST_FOLDER,
@@ -24,24 +25,46 @@ import {
   JS_PATH,
 } from './lib/paths.js';
 
-
-
 async function build() {
+  console.log('reading templates...');
   const templates = getTemplates(TEMPLATES_FOLDER);
+
+  console.log('getting metadata...');
   const pageData = await getPageMetadata();
+
+  console.log('getting projects...');
   const projects = await getProjects();
 
-  const css = compileSass(SASS_PATH);
-  const js = buildJs(JS_PATH)
+  console.log('getting education...');
+  const education = await getEducation();
 
-  const html = templates.main({ _: templates, css, js, pageData, projects });
+  console.log('compiling sass...');
+  const css = compileSass(SASS_PATH);
+
+  console.log('building JS...');
+  const js = buildJs(JS_PATH);
+
+  console.log('compiling main template...');
+  const html = templates.main({
+    _: templates,
+    css,
+    js,
+    pageData,
+    projects,
+    education
+  });
+
+  console.log('minifying HTML...');
   const minifiedHtml = minifyHtml(html);
 
   if(exists(DIST_FOLDER)) rmSync(DIST_FOLDER, { recursive: true });
-
   mkdirSync(DIST_FOLDER);
+
+  console.log('Writing index file...');
   writeFileSync(HTML_PATH, minifiedHtml);
+
+  console.log('Writing assets files ...');
   copyFiles(ASSETS_FOLDER, DIST_ASSETS_FOLDER);
 }
 
-build();
+build().then(() => console.log('Done!'));

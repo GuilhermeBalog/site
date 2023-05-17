@@ -1,0 +1,17 @@
+.education {
+  &__list {
+    --columns: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 2rem;
+
+    @media (min-width: 950px) {
+      --columns: 2;
+    }
+  }
+
+  &__description {
+    line-height: 150%;
+    color: #D7D7D7;
+  }
+}

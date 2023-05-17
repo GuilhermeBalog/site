@@ -1,6 +1,9 @@
 @use 'global/base';
 @use 'global/section';
 
+@use 'components/experience-card';
+
 @use 'partials/hero-section';
 @use 'partials/projects';
+@use 'partials/education';
 @use 'partials/footer';
