@@ -1,6 +1,6 @@
 import { getRepo } from "./github.js";
-
-// import projects from './projects.json' assert { type: 'json' };
+import { readJson } from "./readJson.js";
+import { PROJECTS_PATH } from "./paths.js";
 
 const reposIds = [
   'GuilhermeBalog/tic-tac-toe',
@@ -19,7 +19,10 @@ const reposIds = [
 ]
 
 export function getProjects() {
-  // return Promise.resolve(projects);
+  if (process.env.USE_CACHE === 'true') {
+    return readJson(PROJECTS_PATH);
+  }
+
   return new Promise((resolve, reject) => {
     Promise
       .all(reposIds.map(repo => getRepo(repo)))

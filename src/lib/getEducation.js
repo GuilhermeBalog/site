@@ -1,9 +1,8 @@
-import { readFile } from 'node:fs/promises';
+import { readJson } from './readJson.js';
 import { EDUCATION_PATH } from './paths.js';
 
 export async function getEducation() {
-  const fileContent = await readFile(EDUCATION_PATH);
-  const education = JSON.parse(fileContent.toString(), reviver);
+  const education = await  readJson(EDUCATION_PATH);
 
   return education.map(e => ({
     ...e,
@@ -11,17 +10,9 @@ export async function getEducation() {
   }));
 }
 
-const DATE_TIME_REGEX = /^\d{4}\-\d{2}\-\d{2}T\d{2}:\d{2}:\d{2}$/;
-
-function reviver(_key, value) {
-  if(DATE_TIME_REGEX.test(value)) return new Date(value);
-
-  return value;
-}
-
 /**
- * @param {string} start
- * @param {string} [end]
+ * @param {Date} start
+ * @param {Date} [end]
  */
 function createTime(start, end) {
   const from = formatDate(start)
@@ -34,6 +25,7 @@ const dateFormatter = new Intl.DateTimeFormat('pt-BR', {
   month: 'short',
   year: 'numeric'
 });
+
 /** @param {Date} date */
 function formatDate(date) {
   const formatted = dateFormatter.format(date);
