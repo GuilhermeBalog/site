@@ -2,7 +2,7 @@
   {
     "emoji": "#️⃣",
     "name": "tic-tac-toe",
-    "description": "May implementation of Tic Tac Toe, using Javascript",
+    "description": "My implementation of Tic Tac Toe, using Javascript",
     "primaryLanguage": "JavaScript",
     "languages": [
       "HTML",
@@ -11,7 +11,7 @@
     ],
     "homepage": "https://guilhermebalog.github.io/tic-tac-toe/",
     "repo_url": "https://github.com/GuilhermeBalog/tic-tac-toe",
-    "image": "https://repository-images.githubusercontent.com/233632341/f93e9980-8261-11eb-90d7-ae408d2d3550"
+    "image": "https://repository-images.githubusercontent.com/233632341/557d0a09-5ffc-470b-aa8d-0795a0c4daa6"
   },
   {
     "emoji": "💣",
@@ -25,7 +25,7 @@
     ],
     "homepage": "https://guilhermebalog.github.io/minesweeper/",
     "repo_url": "https://github.com/GuilhermeBalog/minesweeper",
-    "image": "https://repository-images.githubusercontent.com/234667787/d8168080-6293-11eb-827d-c3230638fc4f"
+    "image": "https://repository-images.githubusercontent.com/234667787/da1235ad-6285-4585-8925-3ea39fd29886"
   },
   {
     "emoji": "🤹🏾‍♂️",
@@ -98,7 +98,7 @@
     "image": "https://repository-images.githubusercontent.com/275852683/7f4bca80-8112-11eb-87d0-870d5f6db07e"
   },
   {
-    "emoji": "🦖",
+    "emoji": "💬",
     "name": "capivara-chat",
     "description": "Chat made with Node.js and websockets",
     "primaryLanguage": "HTML",
@@ -109,7 +109,7 @@
     ],
     "homepage": "",
     "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
-    "image": "https://repository-images.githubusercontent.com/233054025/90b4d380-6244-11eb-914d-659004caaa32"
+    "image": "https://repository-images.githubusercontent.com/233054025/c5641f81-dd47-458b-b898-12186aa19784"
   },
   {
     "emoji": "🛰️",

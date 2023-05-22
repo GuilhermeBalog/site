@@ -1,5 +1,6 @@
 import { getRepo } from "./github.js";
 import { readJson } from "./readJson.js";
+import { writeJson } from "./writeJson.js";
 import { PROJECTS_PATH } from "./paths.js";
 
 const reposIds = [
@@ -26,7 +27,11 @@ export function getProjects() {
   return new Promise((resolve, reject) => {
     Promise
       .all(reposIds.map(repo => getRepo(repo)))
-      .then(repos => resolve(repos.map(repo => convertRepoToProject(repo))))
+      .then(repos => {
+        const projects = repos.map(repo => convertRepoToProject(repo));
+        writeJson(PROJECTS_PATH, projects);
+        resolve(projects);
+      })
       .catch(reject);
   })
 }
