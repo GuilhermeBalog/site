@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "build": "node src/index.js"
+    "build": "node src/index.js",
+    "dev": "USE_CACHE=true nodemon --watch src --ext js,html,scss --ignore node_modules/ --ignore dist/"
   },
   "author": "Guilherme Balog",
   "license": "MIT",
@@ -14,5 +15,8 @@
     "dotenv": "^16.0.3",
     "html-minifier": "^4.0.0",
     "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
