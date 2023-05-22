@@ -17,10 +17,13 @@ export async function getRepo(repoFullName)  {
           openGraphImageUrl
           homepageUrl
           url
-          primaryLanguage {
-            name
-          }
-          languages(first: 5) {
+          languages(
+            first: 5,
+            orderBy: {
+              field: SIZE,
+              direction: DESC
+            }
+          ) {
             nodes {
               name
             }

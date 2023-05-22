@@ -23,7 +23,7 @@
     <p class="project-card__tags" itemprop="keywords">
       ${project.languages.join(', ')}
     </p>
-    ${project.primaryLanguage ? `<meta itemprop="programmingLanguage" content="${project.primaryLanguage}">` : '' }
+    ${project.languages[0] ? `<meta itemprop="programmingLanguage" content="${project.languages[0]}">` : '' }
 
     <div class="project-card__actions">
       ${project.homepage && project.homepage !== project.repo_url ? `
