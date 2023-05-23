@@ -9,14 +9,15 @@ const reposIds = [
   'GuilhermeBalog/genius',
   'GuilhermeBalog/js-music-keyboard',
   'GuilhermeBalog/task-list',
+  'GuilhermeBalog/portfolio-generator',
+  'GuilhermeBalog/music-tape',
+  'GuilhermeBalog/mother-weather',
+  'GuilhermeBalog/qwerty-play',
   'GuilhermeBalog/my-hello-worlds',
   'GuilhermeBalog/imersao-gamedev',
   'GuilhermeBalog/capivara-chat',
-  'GuilhermeBalog/dev-radar',
-  'GuilhermeBalog/portfolio-generator',
-  // 'GuilhermeBalog/ru-scraping',
-  'GuilhermeBalog/mother-weather',
   'GuilhermeBalog/be-the-hero',
+  'GuilhermeBalog/dev-radar',
 ]
 
 export function getProjects() {
