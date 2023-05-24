@@ -1,16 +1,18 @@
 <li class="project-card" itemscope itemtype="https://schema.org/SoftwareSourceCode">
-  <a href="${project.homepage}" title="${project.name}">
-    <img
-      src="${project.image}"
-      alt="${project.name}"
-      class="project-card__thumbnail"
-      loading="lazy"
-      itemprop="thumbnailUrl"
-    />
-  </a>
+  ${project.image ? `
+    <a href="${project.homepage || project.repo_url}" title="${project.name}" class="project-card__thumbnail-link">
+      <img
+        src="${project.image}"
+        alt="${project.name}"
+        class="project-card__thumbnail"
+        loading="lazy"
+        itemprop="thumbnailUrl"
+      />
+    </a>
+  ` : ''}
   <div class="project-card__body">
     <h4 class="project-card__title">
-      <a href="${project.homepage}" >
+      <a href="${project.homepage || project.repo_url}" >
         ${project.emoji}
         <span itemprop="name">
           ${project.name}
