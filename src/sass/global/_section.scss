@@ -1,6 +1,6 @@
 section {
   color: var(--text);
-  padding: 1.5rem max((100vw - 1080px) / 2, 1.25rem);
+  padding: 3rem max((100vw - 1080px) / 2, 1.25rem) 6rem;
 
   &:nth-child(odd) {
     background-color: var(--grey-a);
