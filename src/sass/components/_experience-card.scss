@@ -8,6 +8,7 @@
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
+  align-self: start;
 
   &__image {
     border-radius: var(--radius);
@@ -15,7 +16,10 @@
     height: auto;
   }
 
-  &__body {}
+  &__description {
+    line-height: 150%;
+    color: #D7D7D7;
+  }
 
   &__title {
     font-size: 1.25rem;
@@ -45,5 +49,16 @@
     &:not(:first-child) {
       margin-left: 1.5rem;
     }
+  }
+}
+
+.experience-card-list {
+  --columns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: 2rem;
+
+  @media (min-width: 950px) {
+    --columns: 2;
   }
 }

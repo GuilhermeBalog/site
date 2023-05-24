@@ -1,53 +1,51 @@
-<div>
-  <div
-    class="experience-card"
-    itemprop="alumniOf"
-    itemscope
-    itemtype="https://schema.org/OrganizationRole"
-  >
-    <img
-      src="${experience.image}"
-      alt="${experience.school}"
-      class="experience-card__image"
-      itemprop="image"
-    />
-    <div class="experience-card__body">
-      <strong class="experience-card__title" itemprop="roleName">
-        ${experience.title}
-      </strong>
-      <p
-        class="experience-card__subtitle"
-        itemprop="alumniOf"
-        itemscope
-        itemtype="https://schema.org/EducationalOrganization"
+<div
+  class="experience-card"
+  itemprop="alumniOf"
+  itemscope
+  itemtype="https://schema.org/OrganizationRole"
+>
+  <img
+    src="${experience.image}"
+    alt="${experience.school}"
+    class="experience-card__image"
+    itemprop="image"
+  />
+  <div class="experience-card__body">
+    <p class="experience-card__title" itemprop="roleName">
+      ${experience.title}
+    </p>
+    <p
+      class="experience-card__subtitle"
+      itemprop="alumniOf"
+      itemscope
+      itemtype="https://schema.org/EducationalOrganization"
+    >
+      <span itemprop="name">
+        ${experience.school}
+      </span>
+    </p>
+    <p class="experience-card__time">${experience.time}</p>
+    <meta itemprop="startDate" content="${experience.start.toJSON()}" />
+    <meta itemprop="endDate" content="${experience.end.toJSON()}" />
+    <p class="experience-card__links">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="${experience.url}"
+        class="experience-card__link"
+        itemprop="url"
       >
-        <span itemprop="name">
-          ${experience.school}
-        </span>
-      </p>
-      <p class="experience-card__time">${experience.time}</p>
-      <meta itemprop="startDate" content="${experience.start.toJSON()}" />
-      <meta itemprop="endDate" content="${experience.end.toJSON()}" />
-      <p class="experience-card__links">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="${experience.url}"
-          class="experience-card__link"
-          itemprop="url"
-        >
-          🔗 Website
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="${experience.linkedin}"
-          class="experience-card__link"
-        >
-         👥 LinkedIn
-        </a>
-      </p>
-    </div>
+        🔗 Website
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="${experience.linkedin}"
+        class="experience-card__link"
+      >
+        👥 LinkedIn
+      </a>
+    </p>
   </div>
 </div>
 
@@ -55,7 +53,7 @@
   <p>
     <strong>Descrição</strong>
   </p>
-  <p class="education__description">
+  <p class="experience-card__description">
     ${experience.description}
   </p>
 </div>
