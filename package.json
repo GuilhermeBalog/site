@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "node src/index.js",
-    "dev": "USE_CACHE=true nodemon --watch src --ext js,html,scss --ignore node_modules/ --ignore dist/"
+    "dev": "USE_CACHE=true nodemon --watch src --ext js,html,scss --ignore node_modules/ --ignore dist/",
+    "size": "gzip -c dist/index.html | wc -c | numfmt --to=iec --suffix=B",
+    "postbuild": "npm run size"
   },
   "author": "Guilherme Balog",
   "license": "MIT",
