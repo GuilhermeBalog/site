@@ -12,7 +12,7 @@ import { exists } from './lib/exists.js';
 import { compileSass } from './lib/compileSass.js';
 import { minifyHtml } from './lib/minifyHtml.js';
 import { buildJs } from './lib/buildJs.js';
-import { copyFiles } from './lib/copyFiles.js';
+import { copyDir } from './lib/copyDir.js';
 import { getProjects } from './lib/getProjects.js';
 import { getEducation } from './lib/getEducation.js';
 import {
@@ -64,7 +64,7 @@ async function build() {
   writeFileSync(HTML_PATH, minifiedHtml);
 
   console.log('Writing assets files ...');
-  copyFiles(ASSETS_FOLDER, DIST_ASSETS_FOLDER);
+  await copyDir(ASSETS_FOLDER, DIST_ASSETS_FOLDER);
 }
 
 build().then(() => console.log('Done!'));
