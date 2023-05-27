@@ -19,6 +19,7 @@
   &__image {
     max-width: 100%;
     width: 10rem;
+    height: auto;
 
     @media screen and (min-width: 792px) {
       width: 20rem;
