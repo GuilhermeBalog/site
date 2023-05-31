@@ -1,8 +1,4 @@
-import {
-  mkdirSync,
-  writeFileSync,
-  rmSync
-} from 'node:fs';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 
 import 'dotenv/config';
 
@@ -26,45 +22,40 @@ import {
 } from './lib/paths.js';
 
 async function build() {
-  console.log('reading templates...');
-  const templates = getTemplates(TEMPLATES_FOLDER);
+  const [
+    templates,
+    pageData,
+    projects,
+    education,
+    css,
+    js,
+  ] = await Promise.all([
+    getTemplates(TEMPLATES_FOLDER),
+    getPageMetadata(),
+    getProjects(),
+    getEducation(),
+    compileSass(SASS_PATH),
+    buildJs(JS_PATH),
+  ]);
 
-  console.log('getting metadata...');
-  const pageData = await getPageMetadata();
-
-  console.log('getting projects...');
-  const projects = await getProjects();
-
-  console.log('getting education...');
-  const education = await getEducation();
-
-  console.log('compiling sass...');
-  const css = compileSass(SASS_PATH);
-
-  console.log('building JS...');
-  const js = buildJs(JS_PATH);
-
-  console.log('compiling main template...');
   const html = templates.main({
     _: templates,
     css,
     js,
     pageData,
     projects,
-    education
+    education,
   });
 
-  console.log('minifying HTML...');
   const minifiedHtml = minifyHtml(html);
 
-  if(exists(DIST_FOLDER)) rmSync(DIST_FOLDER, { recursive: true });
-  mkdirSync(DIST_FOLDER);
+  if(exists(DIST_FOLDER)) await rm(DIST_FOLDER, { recursive: true });
+  await mkdir(DIST_FOLDER);
 
-  console.log('Writing index file...');
-  writeFileSync(HTML_PATH, minifiedHtml);
-
-  console.log('Writing assets files ...');
-  await copyDir(ASSETS_FOLDER, DIST_ASSETS_FOLDER);
+  await Promise.all([
+    writeFile(HTML_PATH, minifiedHtml),
+    copyDir(ASSETS_FOLDER, DIST_ASSETS_FOLDER),
+  ])
 }
 
 build().then(() => console.log('Done!'));

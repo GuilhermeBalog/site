@@ -1,5 +1,5 @@
-import { readFileSync } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 
-export function buildJs(jsPath) {
-  return readFileSync(jsPath).toString();
+export async function buildJs(jsPath) {
+  return (await readFile(jsPath)).toString();
 }

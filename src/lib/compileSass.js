@@ -1,7 +1,7 @@
 import sass from 'sass';
 
-export function compileSass(sassPath) {
-  const { css } = sass.compile(sassPath, { style: 'compressed' });
+export async function compileSass(sassPath) {
+  const { css } = await sass.compileAsync(sassPath, { style: 'compressed' });
 
   return css;
 }
