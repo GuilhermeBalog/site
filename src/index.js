@@ -1,17 +1,16 @@
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
 
 import 'dotenv/config';
 
 import { getTemplates } from './lib/getTemplates.js';
 import { getPageMetadata } from './lib/getPageMetadata.js';
-import { exists } from './lib/exists.js';
 import { compileSass } from './lib/compileSass.js';
 import { minifyHtml } from './lib/minifyHtml.js';
 import { buildJs } from './lib/buildJs.js';
-import { copyDir } from './lib/copyDir.js';
 import { getProjects } from './lib/getProjects.js';
 import { getEducation } from './lib/getEducation.js';
 import { getWork } from './lib/getWork.js';
+import { safeMkdir, copyDir } from './lib/fsUtils.js';
 import {
   TEMPLATES_FOLDER,
   DIST_FOLDER,
@@ -55,8 +54,7 @@ async function build() {
 
   const minifiedHtml = minifyHtml(html);
 
-  if(exists(DIST_FOLDER)) await rm(DIST_FOLDER, { recursive: true });
-  await mkdir(DIST_FOLDER);
+  await safeMkdir(DIST_FOLDER);
 
   await Promise.all([
     writeFile(HTML_PATH, minifiedHtml),
