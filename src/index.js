@@ -11,6 +11,7 @@ import { buildJs } from './lib/buildJs.js';
 import { copyDir } from './lib/copyDir.js';
 import { getProjects } from './lib/getProjects.js';
 import { getEducation } from './lib/getEducation.js';
+import { getWork } from './lib/getWork.js';
 import {
   TEMPLATES_FOLDER,
   DIST_FOLDER,
@@ -27,6 +28,7 @@ async function build() {
     pageData,
     projects,
     education,
+    work,
     css,
     js,
   ] = await Promise.all([
@@ -34,6 +36,7 @@ async function build() {
     getPageMetadata(),
     getProjects(),
     getEducation(),
+    getWork(),
     compileSass(SASS_PATH),
     buildJs(JS_PATH),
   ]);
@@ -45,6 +48,7 @@ async function build() {
     pageData,
     projects,
     education,
+    work,
   });
 
   const minifiedHtml = minifyHtml(html);

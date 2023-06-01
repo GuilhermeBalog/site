@@ -5,6 +5,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const PROJECTS_PATH = path.join(__dirname, 'projects.json');
 export const EDUCATION_PATH = path.join(__dirname, 'education.json');
+export const WORK_PATH = path.join(__dirname, 'work.json');
 
 export const SRC_PATH = path.join(__dirname, '..');
 

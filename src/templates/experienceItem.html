@@ -19,7 +19,7 @@
     </p>
     <p class="experience-card__time">${time}</p>
     <meta itemprop="startDate" content="${start.toJSON()}" />
-    <meta itemprop="endDate" content="${end.toJSON()}" />
+    ${end ? `<meta itemprop="endDate" content="${end.toJSON()}" />` : ''}
     <p class="experience-card__links">
       <a
         target="_blank"

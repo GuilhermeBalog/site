@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Engenheiro de Software",
+    "company": "PagBank",
+    "start": "2021-05-03T01:00:00",
+    "end": "",
+    "url": "https://pagseguro.uol.com.br/",
+    "linkedin": "https://www.linkedin.com/company/pagbank",
+    "image": "assets/pagbank.jpeg",
+    "content": [
+      {
+        "title": "Descrição",
+        "text": "O PagBank existe para democratizar os serviços financeiros no Brasil e promover soluções inovadoras para mais de 28 milhões de clientes."
+      }
+    ]
+  },
+  {
+    "title": "Desenvolvedor de Software",
+    "company": "Síntese Jr",
+    "start": "2019-03-01T01:00:00",
+    "end": "2021-06-01T01:00:00",
+    "url": "https://www.sintesejr.com.br/",
+    "linkedin": "https://www.linkedin.com/company/sintese-jr",
+    "image": "assets/sintese.jpeg",
+    "content": [
+      {
+        "title": "Descrição",
+        "text": "A Síntese Jr é a empresa júnior do curso de Sistemas de Informação da EACH-USP. Lá trabalho no desenvolvimento de softwares, principalmente sistemas web, em contato direto com clientes entregando valor."
+      }
+    ]
+  },
+  {
+    "title": "Desenvolvedor de Software",
+    "company": "Habits Incubadora-Escola",
+    "start": "2019-03-01T01:00:00",
+    "end": "2020-03-01T01:00:00",
+    "url": "https://habits.usp.br/",
+    "linkedin": "https://www.linkedin.com/company/habits-incubadora-escola",
+    "image": "assets/habits.jpeg",
+    "content": [
+      {
+        "title": "Descrição",
+        "text": "A Habits tem como objetivo ser uma rede de colaboração e educação empreendedora em prol da inovação na cidade de São Paulo em especial na Zona Leste, fazendo a interface entre a universidade, o mercado e a sociedade. Para ajudar em tal tarefa, trabalhei no desenvolvimento de alguns aplicativos internos para facilitar o dia-a-dia das pessoas."
+      }
+    ]
+  }
+]
