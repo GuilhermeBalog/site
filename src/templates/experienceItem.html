@@ -1,0 +1,54 @@
+<div class="experience-card" ${cardProps}>
+  <img
+    src="${image}"
+    alt="${imageAlt}"
+    class="experience-card__image"
+    loading="lazy"
+    itemprop="image"
+  />
+  <div class="experience-card__body">
+    <p class="experience-card__title" ${titleProps}>
+      <span ${titleSpanProps}>
+        ${cardTitle}
+      </span>
+    </p>
+    <p class="experience-card__subtitle" ${subtitleProps}>
+      <span ${subtitleSpanProps}>
+        ${cardSubtitle}
+      </span>
+    </p>
+    <p class="experience-card__time">${time}</p>
+    <meta itemprop="startDate" content="${start.toJSON()}" />
+    <meta itemprop="endDate" content="${end.toJSON()}" />
+    <p class="experience-card__links">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="${url}"
+        class="experience-card__link"
+        itemprop="url"
+      >
+        🔗 Website
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="${linkedin}"
+        class="experience-card__link"
+      >
+        👥 LinkedIn
+      </a>
+    </p>
+  </div>
+</div>
+
+<div>
+  ${content.map(contentItem => `
+    <p>
+      <strong>${contentItem.title}</strong>
+    </p>
+    <p class="experience-card__description">
+      ${contentItem.text}
+    </p>
+  `)}
+</div>
