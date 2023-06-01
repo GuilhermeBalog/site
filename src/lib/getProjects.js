@@ -1,6 +1,5 @@
 import { getRepo } from "./github.js";
-import { readJson } from "./readJson.js";
-import { writeJson } from "./writeJson.js";
+import { readJson, writeJson } from "./jsonUtils.js";
 import { PROJECTS_PATH } from "./paths.js";
 
 const reposIds = [

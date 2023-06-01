@@ -1,4 +1,8 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
+
+export async function writeJson(path, json) {
+  await writeFile(path, JSON.stringify(json, null, '  '));
+}
 
 export async function readJson(path) {
   const fileContent = await readFile(path);

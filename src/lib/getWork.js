@@ -1,4 +1,4 @@
-import { readJson } from './readJson.js';
+import { readJson } from './jsonUtils.js';
 import { WORK_PATH } from './paths.js';
 import { addTime } from './addTime.js';
 

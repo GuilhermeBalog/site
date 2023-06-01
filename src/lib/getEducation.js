@@ -1,4 +1,4 @@
-import { readJson } from './readJson.js';
+import { readJson } from './jsonUtils.js';
 import { EDUCATION_PATH } from './paths.js';
 import { addTime } from './addTime.js';
 
