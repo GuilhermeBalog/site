@@ -9,6 +9,11 @@
   gap: 2rem;
   padding: 2rem;
   align-self: start;
+  flex-direction: column;
+
+  @media (min-width: 475px) {
+    flex-direction: row;
+  }
 
   &__image {
     border-radius: var(--radius);
@@ -43,12 +48,9 @@
     font-size: 1rem;
     font-weight: 500;
     margin: 0;
-  }
-
-  &__link {
-    &:not(:first-child) {
-      margin-left: 1.5rem;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 }
 
