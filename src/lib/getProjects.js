@@ -15,44 +15,16 @@ const reposIds = [
   'GuilhermeBalog/my-hello-worlds',
   'GuilhermeBalog/imersao-gamedev',
   'GuilhermeBalog/capivara-chat',
-  'GuilhermeBalog/be-the-hero',
-  'GuilhermeBalog/dev-radar',
-]
+];
 
-export function getProjects() {
+export async function getProjects() {
   if (process.env.USE_CACHE === 'true') {
     return readJson(PROJECTS_PATH);
   }
 
-  return new Promise((resolve, reject) => {
-    Promise
-      .all(reposIds.map(repo => getRepo(repo)))
-      .then(repos => {
-        const projects = repos.map(repo => convertRepoToProject(repo));
-        writeJson(PROJECTS_PATH, projects);
-        resolve(projects);
-      })
-      .catch(reject);
-  })
-}
+  const projects = await Promise.all(reposIds.map(repo => getRepo(repo)));
 
-function convertRepoToProject(repo) {
-  const { emoji, description } = getEmojiFromDescription(repo.description);
+  await writeJson(PROJECTS_PATH, projects);
 
-  return {
-    emoji,
-    name: repo.name,
-    description,
-    languages: repo.languages.nodes.map(node => node.name),
-    homepage: repo.homepageUrl,
-    repo_url: repo.url,
-    image: repo.openGraphImageUrl,
-  }
-}
-
-/** @param {string} text */
-function getEmojiFromDescription(text) {
-  const [emoji, ...words] = text.split(' ');
-
-  return { emoji, description: words.join(' ') }
+  return projects;
 }
