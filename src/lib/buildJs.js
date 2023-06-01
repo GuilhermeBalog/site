@@ -1,5 +1,7 @@
 import { readFile } from 'node:fs/promises';
 
-export async function buildJs(jsPath) {
-  return (await readFile(jsPath)).toString();
+import { JS_PATH } from './paths.js';
+
+export async function buildJs() {
+  return (await readFile(JS_PATH)).toString();
 }

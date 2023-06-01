@@ -1,10 +1,12 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-import { createTemplate } from './createTemplate.js'
+import { createTemplate } from './createTemplate.js';
 
-export async function getTemplates(basePath) {
-  const files = await readdir(basePath);
+import { TEMPLATES_FOLDER } from './paths.js';
+
+export async function getTemplates() {
+  const files = await readdir(TEMPLATES_FOLDER);
   const templateObjects = await Promise.all(
     files.map(filePath => mountTemplateObject(filePath))
   );
@@ -13,22 +15,22 @@ export async function getTemplates(basePath) {
     ...templates,
     [template.name]: template.fn,
   }), {});
+}
 
-  async function mountTemplateObject(templatePath) {
-    const name = getComponentName(templatePath);
-    const templateContent = await getTemplateContent(templatePath);
-    const fn = createTemplate(templateContent);
+async function mountTemplateObject(templatePath) {
+  const name = getComponentName(templatePath);
+  const templateContent = await getTemplateContent(templatePath);
+  const fn = createTemplate(templateContent);
 
-    return { name, fn };
-  }
+  return { name, fn };
+}
 
-  async function getTemplateContent(templatePath) {
-    const fullPath = path.join(basePath, templatePath);
+async function getTemplateContent(templatePath) {
+  const fullPath = path.join(TEMPLATES_FOLDER, templatePath);
 
-    return (await readFile(fullPath)).toString();
-  }
+  return (await readFile(fullPath)).toString();
+}
 
-  function getComponentName(templatePath) {
-    return templatePath.replace(/\.html$/g, '')
-  }
+function getComponentName(templatePath) {
+  return templatePath.replace(/\.html$/g, '');
 }

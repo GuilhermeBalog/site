@@ -12,13 +12,10 @@ import { getEducation } from './lib/getEducation.js';
 import { getWork } from './lib/getWork.js';
 import { safeMkdir, copyDir } from './lib/fsUtils.js';
 import {
-  TEMPLATES_FOLDER,
   DIST_FOLDER,
-  SASS_PATH,
   HTML_PATH,
   ASSETS_FOLDER,
   DIST_ASSETS_FOLDER,
-  JS_PATH,
   DATA_FOLDER,
   DIST_DATA_FOLDER,
 } from './lib/paths.js';
@@ -33,13 +30,13 @@ async function build() {
     css,
     js,
   ] = await Promise.all([
-    getTemplates(TEMPLATES_FOLDER),
+    getTemplates(),
     getPageMetadata(),
     getProjects(),
     getEducation(),
     getWork(),
-    compileSass(SASS_PATH),
-    buildJs(JS_PATH),
+    compileSass(),
+    buildJs(),
   ]);
 
   const html = templates.main({
