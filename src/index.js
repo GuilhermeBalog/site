@@ -20,6 +20,8 @@ import {
   ASSETS_FOLDER,
   DIST_ASSETS_FOLDER,
   JS_PATH,
+  DATA_FOLDER,
+  DIST_DATA_FOLDER,
 } from './lib/paths.js';
 
 async function build() {
@@ -59,6 +61,7 @@ async function build() {
   await Promise.all([
     writeFile(HTML_PATH, minifiedHtml),
     copyDir(ASSETS_FOLDER, DIST_ASSETS_FOLDER),
+    copyDir(DATA_FOLDER, DIST_DATA_FOLDER),
   ])
 }
 

@@ -154,28 +154,5 @@
     "homepage": "",
     "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
     "image": "https://repository-images.githubusercontent.com/233054025/c5641f81-dd47-458b-b898-12186aa19784"
-  },
-  {
-    "emoji": "🦸🏾‍♂️",
-    "name": "be-the-hero",
-    "description": "Conectando ongs que precisam de ajuda com Heróis para salvá-las!",
-    "languages": [],
-    "homepage": "https://be-the-hero.surge.sh",
-    "repo_url": "https://github.com/GuilhermeBalog/be-the-hero",
-    "image": "https://repository-images.githubusercontent.com/250404540/34b6bd80-8519-11eb-81b2-426bb86fc46c"
-  },
-  {
-    "emoji": "🛰️",
-    "name": "dev-radar",
-    "description": "Find developers near you!",
-    "languages": [
-      "JavaScript",
-      "CSS",
-      "HTML",
-      "Shell"
-    ],
-    "homepage": "",
-    "repo_url": "https://github.com/GuilhermeBalog/dev-radar",
-    "image": "https://opengraph.githubassets.com/15b194bece37aee6eab6d8500dad45488d4b86604a523e205654573c2a33305c/GuilhermeBalog/dev-radar"
   }
 ]
