@@ -20,12 +20,12 @@
 
   &__thumbnail-link {
     overflow: hidden;
+    border-radius: var(--radius) var(--radius) 0 0;
   }
 
   &__thumbnail {
     width: 100%;
     aspect-ratio: 2/1;
-    border-radius: var(--radius) var(--radius) 0 0;
     transition: scale 0.2s, filter 0.2s;
     filter: brightness(90%);
 
