@@ -55,12 +55,7 @@
 }
 
 .experience-card-list {
-  --columns: 1;
   display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
   gap: 2rem;
-
-  @media (min-width: 950px) {
-    --columns: 2;
-  }
 }
