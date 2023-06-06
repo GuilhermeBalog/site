@@ -5,14 +5,17 @@
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
   background-color: var(--grey-c);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
   align-self: start;
   flex-direction: column;
+  text-align: center;
 
   @media (min-width: 475px) {
     flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
   }
 
   &__image {
@@ -50,7 +53,12 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
+
+    @media (min-width: 475px) {
+      justify-content: flex-start;
+    }
   }
 }
 
