@@ -6,7 +6,11 @@
     "end": "2022-12-14T01:00:00",
     "url": "https://www5.usp.br/",
     "linkedin": "https://www.linkedin.com/school/uspoficial/",
-    "image": "assets/usp.png",
+    "image": {
+      "url": "assets/usp.png",
+      "width": 140,
+      "height": 140
+    },
     "content": [
       {
         "title": "Descrição",
@@ -21,7 +25,11 @@
     "end": "2018-12-14T01:00:00",
     "url": "https://www.cps.sp.gov.br/etec/",
     "linkedin": "https://www.linkedin.com/school/etecsp/",
-    "image": "assets/etec.png",
+    "image": {
+      "url": "assets/etec.png",
+      "width": 140,
+      "height": 112
+    },
     "content": [
       {
         "title": "Descrição",

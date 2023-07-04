@@ -6,7 +6,11 @@
     "end": "",
     "url": "https://pagseguro.uol.com.br/",
     "linkedin": "https://www.linkedin.com/company/pagbank",
-    "image": "assets/pagbank.jpeg",
+    "image": {
+      "url": "assets/pagbank.jpeg",
+      "width": 200,
+      "height": 200
+    },
     "content": [
       {
         "title": "Descrição",
@@ -21,7 +25,11 @@
     "end": "2021-06-01T01:00:00",
     "url": "https://www.sintesejr.com.br/",
     "linkedin": "https://www.linkedin.com/company/sintese-jr",
-    "image": "assets/sintese.jpeg",
+    "image": {
+      "url": "assets/sintese.jpeg",
+      "width": 200,
+      "height": 200
+    },
     "content": [
       {
         "title": "Descrição",
@@ -36,7 +44,11 @@
     "end": "2020-03-01T01:00:00",
     "url": "https://habits.usp.br/",
     "linkedin": "https://www.linkedin.com/company/habits-incubadora-escola",
-    "image": "assets/habits.jpeg",
+    "image": {
+      "url": "assets/habits.jpeg",
+      "width": 200,
+      "height": 200
+    },
     "content": [
       {
         "title": "Descrição",
