@@ -24,28 +24,20 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
 
     @media screen and (min-width: 792px) {
-      display: flex;
+      flex-direction: row;
     }
   }
 
   &__link {
     font-weight: 500;
-    color: var(--accent-text);
 
     &:hover {
       text-decoration: underline;
     }
   }
-
-  &__list-item:not(:first-child) {
-    margin-top: 0.5rem;
-
-    @media screen and (min-width: 792px) {
-      margin-left: 1rem;
-      margin-top: 0;
-    }
-  }
-
 }
