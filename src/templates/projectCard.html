@@ -22,10 +22,14 @@
     <p class="project-card__description" itemprop="description">
       ${project.description}
     </p>
-    <p class="project-card__tags" itemprop="keywords">
-      ${project.languages.join(', ')}
-    </p>
-    ${project.languages[0] ? `<meta itemprop="programmingLanguage" content="${project.languages[0]}">` : '' }
+    <ul class="project-card__tags" itemprop="keywords">
+      ${project.languages.map((language, i) => `
+        <li class="badge">
+          ${language.name}${i !== project.languages.length - 1 ? '<span class="hide">,</span>' : ''}
+        </li>
+      `).join('')}
+    </ul>
+    ${project.languages[0] ? `<meta itemprop="programmingLanguage" content="${project.languages[0].name}">` : '' }
 
     <div class="project-card__actions">
       ${project.homepage && project.homepage !== project.repo_url ? `

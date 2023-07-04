@@ -4,9 +4,15 @@
     "name": "tic-tac-toe",
     "description": "My implementation of Tic Tac Toe, using Javascript",
     "languages": [
-      "JavaScript",
-      "CSS",
-      "HTML"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "HTML"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/tic-tac-toe/",
     "repo_url": "https://github.com/GuilhermeBalog/tic-tac-toe",
@@ -17,9 +23,15 @@
     "name": "minesweeper",
     "description": "Web version of the classic Minesweeper",
     "languages": [
-      "JavaScript",
-      "HTML",
-      "CSS"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/minesweeper/",
     "repo_url": "https://github.com/GuilhermeBalog/minesweeper",
@@ -30,9 +42,15 @@
     "name": "genius",
     "description": "Jogo baseado no brinquedo Genius, versão para web",
     "languages": [
-      "JavaScript",
-      "CSS",
-      "HTML"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "HTML"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/genius/",
     "repo_url": "https://github.com/GuilhermeBalog/genius",
@@ -43,9 +61,15 @@
     "name": "js-music-keyboard",
     "description": "A simple keyboard made in with the Tone.js framework",
     "languages": [
-      "JavaScript",
-      "CSS",
-      "HTML"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "HTML"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/js-music-keyboard/",
     "repo_url": "https://github.com/GuilhermeBalog/js-music-keyboard",
@@ -56,9 +80,15 @@
     "name": "task-list",
     "description": "A To-do list app, made with Javascript",
     "languages": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/task-list/",
     "repo_url": "https://github.com/GuilhermeBalog/task-list",
@@ -69,8 +99,12 @@
     "name": "portfolio-generator",
     "description": "Create a portfolio using your GitHub repositories!",
     "languages": [
-      "JavaScript",
-      "CSS"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/portfolio-generator/",
     "repo_url": "https://github.com/GuilhermeBalog/portfolio-generator",
@@ -81,9 +115,15 @@
     "name": "music-tape",
     "description": "Toque e controle a velocidade da música tocando, como uma fita.",
     "languages": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/music-tape/",
     "repo_url": "https://github.com/GuilhermeBalog/music-tape",
@@ -94,10 +134,18 @@
     "name": "mother-weather",
     "description": "Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer",
     "languages": [
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Shell"
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "Shell"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/mother-weather/",
     "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
@@ -108,22 +156,34 @@
     "name": "qwerty-play",
     "description": "Aplicação que simula digitação num teclado virtual.",
     "languages": [
-      "HTML",
-      "JavaScript",
-      "CSS"
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/qwerty-play/",
     "repo_url": "https://github.com/GuilhermeBalog/qwerty-play",
-    "image": "https://repository-images.githubusercontent.com/348214511/f47a3c80-85f7-11eb-9a58-b1cf99f0b975"
+    "image": "https://repository-images.githubusercontent.com/348214511/592297e4-4805-47df-86d6-bd06f2efb257"
   },
   {
     "emoji": "👨🏾‍💻",
     "name": "my-hello-worlds",
     "description": "This is a web page with some languages that I know",
     "languages": [
-      "JavaScript",
-      "CSS",
-      "HTML"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "HTML"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/my-hello-worlds/",
     "repo_url": "https://github.com/GuilhermeBalog/my-hello-worlds",
@@ -134,9 +194,15 @@
     "name": "imersao-gamedev",
     "description": "Jogo desenvolvido com o p5.js durante a Imersão GameDev da Alura",
     "languages": [
-      "JavaScript",
-      "HTML",
-      "CSS"
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      }
     ],
     "homepage": "https://guilhermebalog.github.io/imersao-gamedev/",
     "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
@@ -147,9 +213,15 @@
     "name": "capivara-chat",
     "description": "Chat made with Node.js and websockets",
     "languages": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      }
     ],
     "homepage": "",
     "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
