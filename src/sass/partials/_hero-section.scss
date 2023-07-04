@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 
   &:only-child {
     height: 100%;
@@ -16,13 +17,64 @@
     padding-block: 5rem;
   }
 
-  &__image {
-    max-width: 100%;
+  &__image-container {
+    position: relative;
     width: 10rem;
-    height: auto;
 
     @media screen and (min-width: 792px) {
       width: 20rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__image-icon {
+    --base-width: 1rem;
+    --step: 1rem;
+
+    width: calc(var(--base-width) + var(--size, 1) * var(--step));
+    position: absolute;
+    transition: scale .3s;
+    aspect-ratio: 1/1;
+
+    @media screen and (min-width: 792px) {
+      --base-width: 2rem;
+      --step: 1.5rem;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &[src*="nodejs"] {
+      --size: 4;
+      left: calc(var(--base-width) * -1);
+      bottom: calc(var(--step) * -1);
+      filter: drop-shadow(-20px 20px 34px #00A87833);
+    }
+
+    &[src*="react"] {
+      --size: 3;
+      right: calc(var(--base-width) * -1);
+      bottom: var(--step);
+      filter: drop-shadow(-20px 20px 34px #00BCD433);
+    }
+
+    &[src*="heroku"] {
+      --size: 2;
+      left: 0;
+      top: 0;
+      filter: drop-shadow(-20px 20px 34px #673AB766);
+    }
+
+    &[src*="java"] {
+      --size: 1;
+      right: var(--base-width);
+      top: 0;
+      filter: drop-shadow(-20px 20px 34px #E54F6D33);
     }
   }
 
