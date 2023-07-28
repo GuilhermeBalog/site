@@ -36,8 +36,10 @@ function formatDate(date) {
 
 /** @param {string} text */
 function capitalize(text) {
-  const [firstLetter, ...rest] = text.split('');
-  return firstLetter.toUpperCase().concat(rest.join(''));
+  return text.replace(
+    /^./,
+    firstLetter => firstLetter.toLocaleUpperCase()
+  )
 }
 
 /** @param {string} text */
