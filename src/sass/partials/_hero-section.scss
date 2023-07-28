@@ -98,10 +98,10 @@
     color: var(--accent-text);
     margin-top: 0;
     margin-bottom: 1rem;
+  }
 
-    &-variant {
-      color: var(--primary);
-    }
+  &__job-title-variant {
+    color: var(--primary);
   }
 
   &__description {
@@ -151,10 +151,13 @@
     &:not(:first-child) {
       margin-left: 3rem;
     }
-  }
 
-  &__social-icon {
-    vertical-align: top;
-    margin-right: 0.5rem;
+    &[href*="github.com"]::before {
+      content: '💻';
+    }
+
+    &[href*="linkedin.com"]::before {
+      content: '👥';
+    }
   }
 }
