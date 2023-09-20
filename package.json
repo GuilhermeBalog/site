@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node src/index.js",
     "dev": "USE_CACHE=true nodemon --watch src --ext js,html,scss --ignore node_modules/ --ignore dist/",
-    "size": "./get-size.sh",
+    "size": "./get-size.sh dist/index.html",
     "postbuild": "npm run size",
     "test": "node --test"
   },
