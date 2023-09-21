@@ -8,7 +8,7 @@ import {
 } from 'node:fs/promises';
 import path from 'node:path';
 
-export async function exists(path) {
+export async function exists(path: string) {
   try {
     await access(path, constants.F_OK);
     return true;
@@ -17,7 +17,7 @@ export async function exists(path) {
   }
 }
 
-export async function copyDir(from, to) {
+export async function copyDir(from: string, to: string) {
   await safeMkdir(to);
 
   const files = await readdir(from);
@@ -30,7 +30,7 @@ export async function copyDir(from, to) {
   );
 }
 
-export async function safeMkdir(dirPath) {
+export async function safeMkdir(dirPath: string) {
   if(await exists(dirPath)) await rm(dirPath, { recursive: true });
 
   await mkdir(dirPath);

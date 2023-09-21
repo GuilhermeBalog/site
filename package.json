@@ -20,6 +20,7 @@
     "sass": "^1.62.1"
   },
   "devDependencies": {
+    "@types/html-minifier": "^4.0.3",
     "@types/node": "^20.6.3",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",

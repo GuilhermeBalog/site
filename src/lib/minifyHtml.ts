@@ -1,6 +1,6 @@
 import { minify } from 'html-minifier';
 
-export function minifyHtml(html) {
+export function minifyHtml(html: string) {
   return minify(html, {
     collapseBooleanAttributes: true,
     collapseInlineTagWhitespace: true,
