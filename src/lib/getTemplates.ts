@@ -11,13 +11,16 @@ export async function getTemplates() {
     files.map(filePath => mountTemplateObject(filePath))
   );
 
-  return templateObjects.reduce((templates, template) => ({
-    ...templates,
-    [template.name]: template.fn,
-  }), {});
+  type Template = Awaited<ReturnType<typeof mountTemplateObject>>
+
+  const result = templateObjects.reduce((templates, template) => {
+    templates[template.name] = template.fn;
+    return templates;
+  }, {} as Record<Template["name"], Template["fn"]>);
+  return result;
 }
 
-async function mountTemplateObject(templatePath) {
+async function mountTemplateObject(templatePath: string) {
   const name = getComponentName(templatePath);
   const templateContent = await getTemplateContent(templatePath);
   const fn = createTemplate(templateContent);
@@ -25,12 +28,12 @@ async function mountTemplateObject(templatePath) {
   return { name, fn };
 }
 
-async function getTemplateContent(templatePath) {
+async function getTemplateContent(templatePath: string) {
   const fullPath = path.join(TEMPLATES_FOLDER, templatePath);
 
   return (await readFile(fullPath)).toString();
 }
 
-function getComponentName(templatePath) {
+function getComponentName(templatePath: string) {
   return templatePath.replace(/\.html$/g, '');
 }
