@@ -1,5 +1,6 @@
 import React from 'react';
 import sass from 'sass';
+
 import { SASS_PATH } from '../lib/paths.js';
 
 const { css } = sass.compile(SASS_PATH, { style: 'compressed' });
