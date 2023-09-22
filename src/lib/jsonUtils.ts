@@ -4,9 +4,9 @@ export async function writeJson(path: string, json: any) {
   await writeFile(path, JSON.stringify(json, null, '  '));
 }
 
-export async function readJson(path: string) {
+export async function readJson<T>(path: string) {
   const fileContent = await readFile(path);
-  const jsonContent = JSON.parse(fileContent.toString(), reviver);
+  const jsonContent = JSON.parse(fileContent.toString(), reviver) as T;
 
   return jsonContent;
 }
