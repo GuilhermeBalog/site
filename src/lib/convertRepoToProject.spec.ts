@@ -1,9 +1,10 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
 import { convertRepoToProject } from './convertRepoToProject.js';
+import { Repository } from './github.js';
 
 describe('convertRepoToProject()', () => {
-  const sampleRepo = {
+  const sampleRepo: Repository = {
     name: 'sample-repo',
     description: 'Lorem ipsum dolor',
     languages: {
@@ -14,6 +15,7 @@ describe('convertRepoToProject()', () => {
     },
     homepageUrl: 'https://user.github.io/sample-repo',
     url: 'https://github.com/user/sample-repo',
+    openGraphImageUrl: '',
   }
 
   it('should convert a github repository to the project format', () => {

@@ -9,7 +9,7 @@
     "dev": "USE_CACHE=true nodemon --watch src --ext ts,html,scss --ignore node_modules/ --ignore dist/ --exec 'ts-node --esm src/index.ts'",
     "size": "./get-size.sh dist/index.html",
     "postbuild": "npm run size",
-    "test": "node --test"
+    "test": "node --test --loader ts-node/esm src/**/*.spec.ts"
   },
   "author": "Guilherme Balog",
   "license": "MIT",
