@@ -1,3 +1,4 @@
+import { Project } from "./convertRepoToProject.js";
 import { getRepo } from "./github.js";
 import { readJson, writeJson } from "./jsonUtils.js";
 import { PROJECTS_PATH } from "./paths.js";
@@ -19,7 +20,7 @@ const reposIds = [
 
 export async function getProjects() {
   if (process.env.USE_CACHE === 'true') {
-    return readJson(PROJECTS_PATH);
+    return readJson<Project[]>(PROJECTS_PATH);
   }
 
   const projects = await Promise.all(reposIds.map(repo => getRepo(repo)));

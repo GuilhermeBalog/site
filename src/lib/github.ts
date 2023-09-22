@@ -7,10 +7,23 @@ const gql = graphql.defaults({
   },
 });
 
-export async function getRepo(repoFullName)  {
+export interface Repository {
+  name: string,
+  description: string,
+  openGraphImageUrl: string,
+  homepageUrl: string,
+  url: string,
+  languages: {
+    nodes: {
+      name: string,
+    }[],
+  },
+}
+
+export async function getRepo(repoFullName: string)  {
   const [owner, repo] = repoFullName.split('/');
 
-  const { repository } = await gql(`
+  const { repository } = await gql<{repository: Repository}>(`
       query repoCard($owner: String!, $repo: String!) {
         repository(owner: $owner, name: $repo) {
           name

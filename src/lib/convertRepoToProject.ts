@@ -1,4 +1,16 @@
-export function convertRepoToProject(repo) {
+import { Repository } from './github.js';
+
+export interface Project {
+  emoji?: string,
+  name: string,
+  description: string,
+  languages: { name: string }[],
+  homepage?: string,
+  repo_url: string,
+  image?: string,
+}
+
+export function convertRepoToProject(repo: Repository): Project {
   const { emoji, description } = getEmojiFromDescription(repo.description);
   const image = getImage(repo.openGraphImageUrl);
 
@@ -6,13 +18,14 @@ export function convertRepoToProject(repo) {
     emoji,
     name: repo.name,
     description,
-    languages: repo.languages.nodes.map(node => node.name),
+    languages: repo.languages.nodes,
     homepage: repo.homepageUrl,
     repo_url: repo.url,
     image,
   };
 }
-function getImage(imageUrl) {
+
+function getImage(imageUrl: string) {
   if (!imageUrl) {
     return '';
   }
@@ -25,9 +38,8 @@ function getImage(imageUrl) {
 
   return imageUrl;
 }
-/** @param {string} text */
 
-function getEmojiFromDescription(text) {
+function getEmojiFromDescription(text: string) {
   const [emoji, ...words] = text.split(' ');
 
   if ((/[A-z]/).test(emoji)) {

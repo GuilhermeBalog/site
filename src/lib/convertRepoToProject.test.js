@@ -23,7 +23,10 @@ describe('convertRepoToProject()', () => {
       emoji: '',
       name: 'sample-repo',
       description: 'Lorem ipsum dolor',
-      languages: ['JavaScript', 'HTML'],
+      languages: [
+        { name: 'JavaScript' },
+        { name: 'HTML' },
+      ],
       homepage: 'https://user.github.io/sample-repo',
       repo_url: 'https://github.com/user/sample-repo',
       image: '',
