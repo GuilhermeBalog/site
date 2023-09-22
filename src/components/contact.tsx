@@ -3,7 +3,7 @@ import React from "react"
 const FORMSUBMIT_PUBLIC_TOKEN = '7f6cf6921639c69916dbd96252ed8959'
 const FORMSUBMIT_URL = `https://formsubmit.co/${FORMSUBMIT_PUBLIC_TOKEN}`;
 
-export default function Contact() {
+export default function ContactSection() {
   return (
     <section id="contact" className="contact">
       <h2 className="contact__title">Contato</h2>

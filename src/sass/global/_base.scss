@@ -49,3 +49,7 @@ p {
 .hide {
   display: none;
 }
+
+[data-emoji]::before {
+  content: attr(data-emoji) ' ';
+}
