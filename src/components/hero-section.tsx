@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ExternalLink from './external-link.js';
+
 export default function HeroSection() {
   return (
     <section className="hero-section" id="hero">
@@ -54,22 +56,18 @@ export default function HeroSection() {
         </a>
 
         <nav className="hero-section__social-links">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
+          <ExternalLink
             href="https://www.linkedin.com/in/guilhermebalog"
             className="hero-section__social-link"
           >
             LinkedIn
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
+          </ExternalLink>
+          <ExternalLink
             href="https://github.com/GuilhermeBalog"
             className="hero-section__social-link"
           >
             GitHub
-          </a>
+          </ExternalLink>
         </nav>
       </div>
     </section>
