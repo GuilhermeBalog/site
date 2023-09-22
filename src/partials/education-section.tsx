@@ -1,6 +1,6 @@
 import React from "react"
 
-import ExperienceItem from "./experience-item.js";
+import ExperienceItem from "../components/experience-item.js";
 import { EducationExperience } from "../lib/getEducation.js";
 
 export default function EducationSection({ education }: { education: EducationExperience[] }) {

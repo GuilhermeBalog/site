@@ -1,6 +1,6 @@
 import React from "react"
 
-import ProjectCard from "./project-card.js";
+import ProjectCard from "../components/project-card.js";
 import { Project } from "../lib/convertRepoToProject.js";
 
 export default function ProjectsSection({ projects }: { projects: Project[] }) {
