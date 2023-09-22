@@ -153,11 +153,11 @@
     }
 
     &[href*="github.com"]::before {
-      content: '💻';
+      content: '💻 ';
     }
 
     &[href*="linkedin.com"]::before {
-      content: '👥';
+      content: '👥 ';
     }
   }
 }
