@@ -1,7 +1,7 @@
 import React from "react"
 
 import { WorkExperience } from "../lib/getWork.js";
-import ExperienceItem from "./experience-item.js";
+import ExperienceItem from "../components/experience-item.js";
 
 export default function WorkSection({ work }: { work: WorkExperience[] }) {
   return (

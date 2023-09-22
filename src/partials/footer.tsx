@@ -1,6 +1,6 @@
 import React from "react"
 
-import ExternalLink from "./external-link.js";
+import ExternalLink from "../components/external-link.js";
 
 export default function Footer() {
   return (
