@@ -2,11 +2,12 @@ import { readJson } from './jsonUtils.js';
 import { WORK_PATH } from './paths.js';
 import { addTime } from './addTime.js';
 
-interface WorkExperience {
+export interface WorkExperience {
   title: string,
   company: string,
   start: Date,
   end?: Date,
+  time: string,
   url: string,
   linkedin: string,
   image: {
@@ -21,7 +22,7 @@ interface WorkExperience {
 }
 
 export async function getWork() {
-  const work = await readJson<WorkExperience[]>(WORK_PATH);
+  const work = await readJson<Omit<WorkExperience, "time">[]>(WORK_PATH);
 
   return work.map(e => addTime(e));
 }
