@@ -2,11 +2,12 @@ import { readJson } from './jsonUtils.js';
 import { EDUCATION_PATH } from './paths.js';
 import { addTime } from './addTime.js';
 
-interface EducationExperience {
+export interface EducationExperience {
   title: string,
   school: string,
   start: Date,
   end?: Date,
+  time: string,
   url: string,
   linkedin: string,
   image: {
@@ -21,7 +22,7 @@ interface EducationExperience {
 }
 
 export async function getEducation() {
-  const education = await readJson<EducationExperience[]>(EDUCATION_PATH);
+  const education = await readJson<Omit<EducationExperience, "time">[]>(EDUCATION_PATH);
 
   return education.map(e => addTime(e));
 }
