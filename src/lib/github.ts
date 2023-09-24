@@ -21,6 +21,8 @@ export interface Repository {
 }
 
 export async function getRepo(repoFullName: string)  {
+  console.log(`Fetching repo ${repoFullName}`);
+
   const [owner, repo] = repoFullName.split('/');
 
   const { repository } = await gql<{repository: Repository}>(`
@@ -45,6 +47,8 @@ export async function getRepo(repoFullName: string)  {
         }
       }
   `, { owner, repo });
+
+  console.log(`Done fetching repo ${repoFullName}`);
 
   const project = convertRepoToProject(repository);
 
