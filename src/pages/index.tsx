@@ -56,5 +56,8 @@ function Main({ projects, work, education }: PageProps) {
 }
 
 export function buildPage(props: PageProps) {
-  return renderToStaticMarkup(<Main {...props} />);
+  const doctype = `<!doctype html>`;
+  const documentHtml = renderToStaticMarkup(<Main {...props} />);
+
+  return `${doctype}${documentHtml}`
 }
