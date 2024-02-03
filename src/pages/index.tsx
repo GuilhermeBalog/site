@@ -24,35 +24,33 @@ interface PageProps {
 
 function Main({ projects, work, education }: PageProps) {
   return (
-    <>
-      <html lang="pt-BR">
-        <head>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="icon" href={emojiFavicon()} />
+    <html lang="pt-BR">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href={emojiFavicon()} />
 
-          <link rel="preconnect" href="https://repository-images.githubusercontent.com" crossOrigin="" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://repository-images.githubusercontent.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 
-          <Metadata />
-          <Style />
-        </head>
+        <Metadata />
+        <Style />
+      </head>
 
-        <body>
-          <main itemScope itemType="https://schema.org/Person">
-            <HeroSection />
-            <ProjectsSection projects={projects} />
-            <WorkSection work={work} />
-            <EducationSection education={education} />
-            <ContactSection />
-            <Footer />
-          </main>
+      <body>
+        <main itemScope itemType="https://schema.org/Person">
+          <HeroSection />
+          <ProjectsSection projects={projects} />
+          <WorkSection work={work} />
+          <EducationSection education={education} />
+          <ContactSection />
+          <Footer />
+        </main>
 
-          <Script />
-        </body>
-      </html>
-    </>
+        <Script />
+      </body>
+    </html>
   );
 }
 
