@@ -1,13 +1,32 @@
 [
   {
+    "title": "Analista de Tecnologia",
+    "company": "Serpro",
+    "start": "2024-02-03T01:00:00",
+    "end": null,
+    "url": "https://www.serpro.gov.br/",
+    "linkedin": "https://www.linkedin.com/company/serpro",
+    "image": {
+      "url": "assets/serpro.jpg",
+      "width": 200,
+      "height": 200
+    },
+    "content": [
+      {
+        "title": "Descrição",
+        "text": "O Serpro desenvolve soluções tecnológicas que viabilizam as ações estratégicas do Estado brasileiro."
+      }
+    ]
+  },
+  {
     "title": "Engenheiro de Software",
     "company": "PagBank",
     "start": "2021-05-03T01:00:00",
-    "end": "",
+    "end": "2024-02-16T01:00:00",
     "url": "https://pagseguro.uol.com.br/",
     "linkedin": "https://www.linkedin.com/company/pagbank",
     "image": {
-      "url": "assets/pagbank.jpeg",
+      "url": "assets/pagbank.jpg",
       "width": 200,
       "height": 200
     },
