@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "build": "ts-node --esm src/index.ts",
+    "build": "node --loader ts-node/esm src/index.js",
     "dev": "USE_CACHE=true nodemon --watch src --ext ts,html,scss --ignore node_modules/ --ignore dist/ --exec 'ts-node --esm src/index.ts'",
     "size": "./get-size.sh dist/index.html",
     "postbuild": "npm run size",
@@ -27,7 +27,7 @@
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "nodemon": "^2.0.22",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2"
   }
 }
