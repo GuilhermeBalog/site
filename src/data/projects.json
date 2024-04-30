@@ -58,7 +58,7 @@
   },
   {
     "emoji": "🎹",
-    "name": "js-music-keyboard",
+    "name": "music-keyboard",
     "description": "A simple keyboard made in with the Tone.js framework",
     "languages": [
       {
@@ -71,9 +71,9 @@
         "name": "HTML"
       }
     ],
-    "homepage": "https://guilhermebalog.github.io/js-music-keyboard/",
-    "repo_url": "https://github.com/GuilhermeBalog/js-music-keyboard",
-    "image": "https://repository-images.githubusercontent.com/190751734/c6998fbb-5c5c-45ea-8cca-fdabbd3cd12d"
+    "homepage": "https://guilhermebalog.github.io/music-keyboard/",
+    "repo_url": "https://github.com/GuilhermeBalog/music-keyboard",
+    "image": "https://repository-images.githubusercontent.com/190751734/12210741-eef2-4548-90df-4604586346a6"
   },
   {
     "emoji": "☑️",
@@ -149,7 +149,7 @@
     ],
     "homepage": "https://guilhermebalog.github.io/mother-weather/",
     "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
-    "image": "https://repository-images.githubusercontent.com/287170883/9c6fe280-5986-11eb-8d64-87f278678d2e"
+    "image": "https://repository-images.githubusercontent.com/287170883/34e567f0-0c99-4497-8479-598be299d19f"
   },
   {
     "emoji": "⌨️",
