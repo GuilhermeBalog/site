@@ -1,3 +1,4 @@
+import { lstatSync } from 'node:fs';
 import {
   access,
   constants,
@@ -7,6 +8,10 @@ import {
   rm,
 } from 'node:fs/promises';
 import path from 'node:path';
+
+export function isFile(path: string) {
+  return lstatSync(path).isFile();
+};
 
 export async function exists(path: string) {
   try {
@@ -18,20 +23,30 @@ export async function exists(path: string) {
 }
 
 export async function copyDir(from: string, to: string) {
-  await safeMkdir(to);
+  if(!await exists(to)) {
+    await makeDir(to);
+  }
 
   const files = await readdir(from);
 
   await Promise.all(
-    files.map(file => copyFile(
-      path.join(from, file),
-      path.join(to, file)
-    ))
+    files.map(file => {
+      const fromPath = path.join(from, file);
+      const toPath = path.join(to, file);
+
+      if(isFile(fromPath)) {
+        return copyFile(fromPath, toPath)
+      }
+
+      return copyDir(fromPath, toPath);
+    })
   );
 }
 
-export async function safeMkdir(dirPath: string) {
-  if(await exists(dirPath)) await rm(dirPath, { recursive: true });
+export async function makeDir(dirPath: string) {
+  return mkdir(dirPath);
+}
 
-  await mkdir(dirPath);
+export async function removeDirIfExists(dirPath: string) {
+  if(await exists(dirPath)) await rm(dirPath, { recursive: true });
 }

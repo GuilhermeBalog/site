@@ -6,17 +6,14 @@ import { getProjects } from './lib/getProjects.js';
 import { getWork } from './lib/getWork.js';
 import { getEducation } from './lib/getEducation.js';
 import { minifyHtml } from './lib/minifyHtml.js';
-import { safeMkdir, copyDir } from './lib/fsUtils.js';
+import { makeDir, copyDir, removeDirIfExists } from './lib/fsUtils.js';
 
 import { buildPage } from './pages/index.js';
 
 import {
   DIST_FOLDER,
   HTML_PATH,
-  ASSETS_FOLDER,
-  DIST_ASSETS_FOLDER,
-  DATA_FOLDER,
-  DIST_DATA_FOLDER,
+  PUBLIC_FOLDER,
 } from './lib/paths.js';
 
 async function build() {
@@ -34,12 +31,12 @@ async function build() {
 
   const minifiedHtml = minifyHtml(html);
 
-  await safeMkdir(DIST_FOLDER);
+  await removeDirIfExists(DIST_FOLDER);
+  await makeDir(DIST_FOLDER);
 
   await Promise.all([
     writeFile(HTML_PATH, minifiedHtml),
-    copyDir(ASSETS_FOLDER, DIST_ASSETS_FOLDER),
-    copyDir(DATA_FOLDER, DIST_DATA_FOLDER),
+    copyDir(PUBLIC_FOLDER, DIST_FOLDER),
   ]);
 }
 
